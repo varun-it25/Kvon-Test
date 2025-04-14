@@ -1,0 +1,1 @@
+In Grid, we can menstion number of columns and rows in it. It is used by pinetrest.
