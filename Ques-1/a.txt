@@ -1,0 +1,4 @@
+Aria in HTMl is a type of attribute, which is used to descrition of the element.
+
+<input aria-passwordinput>
+<button aria-themebtn>Dark</button

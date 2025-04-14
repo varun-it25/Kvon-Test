@@ -1,0 +1,1 @@
+During event loop; An pool of the async tasks and are stores in queue. When task is complete an call stack call the function and exit from the event loop.

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Component</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="w-screen h-screen bg-red-400 flex flex-col">
+        <header class="border-b border-white py-2 flex justify-between items-center px-8">
+            <a href="#" class="font-semibold text-white text-[1rem] sm:text-xl" style="text-decoration: none;">Gallery</a>
+            <nav class="space-x-2 sm:space-x-6 text-sm font-medium">
+               <a href="#" class="text-white" style="text-decoration: none;">Home</a>
+               <a href="#" class="text-white" style="text-decoration: none;">About</a>
+               <a href="#" class="text-white" style="text-decoration: none;">Contact</a>
+            </nav>
+            <button class="bg-white font-medium text-[0.6rem] sm:text-base px-3 sm:px-4 py-1 rounded">Login</button>
+        </header>
+        <div class="flex-1 overflow-auto p-0 sm:p-4 m-4">
+            <div class="w-full h-full rounded grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <button onclick="openModal('https://rukminim2.flixcart.com/image/850/1000/kxxl9jk0/poster/o/q/5/small-9f5jqqzj-anime-anime-girls-hatsune-miku-blue-hair-original-imaga9xqazaef6kc.jpeg?q=90&crop=false')" class="w-full">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/kxxl9jk0/poster/o/q/5/small-9f5jqqzj-anime-anime-girls-hatsune-miku-blue-hair-original-imaga9xqazaef6kc.jpeg?q=90&crop=false" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i.ytimg.com/vi/xXmXM0qRMbo/maxresdefault.jpg')" class="w-full">
+                    <img src="https://i.ytimg.com/vi/xXmXM0qRMbo/maxresdefault.jpg" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://wallpapers.com/images/featured/anime-couple-xyev5mudcvnzo825.jpg')" class="w-full">
+                    <img src="https://wallpapers.com/images/featured/anime-couple-xyev5mudcvnzo825.jpg" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://media.istockphoto.com/id/1522505276/vector/day-sky-clouds.jpg?s=612x612&w=0&k=20&c=m9djNQPNzLUmPRAX3_dmpg1fXYLj7_S6BAw6XoHihs0=')" class="w-full">
+                    <img src="https://media.istockphoto.com/id/1522505276/vector/day-sky-clouds.jpg?s=612x612&w=0&k=20&c=m9djNQPNzLUmPRAX3_dmpg1fXYLj7_S6BAw6XoHihs0=" class="rounded aspect-video" />
+                </button>               
+                <button onclick="openModal('https://www.hindustantimes.com/ht-img/img/2023/02/15/1600x900/Death_Note_is_usually_the_first_anime__1676437361142_1676437361490_1676437361490.jpg')" class="w-full">
+                    <img src="https://www.hindustantimes.com/ht-img/img/2023/02/15/1600x900/Death_Note_is_usually_the_first_anime__1676437361142_1676437361490_1676437361490.jpg" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1')" class="w-full">
+                    <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1')" class="w-full">
+                    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Temp-1400x700(11)-1.png" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1')" class="w-full">
+                    <img src="https://img.freepik.com/free-photo/lifestyle-scene-anime-style-with-person-doing-daily-tasks_23-2151002606.jpg" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1')" class="w-full">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbfRz2F0I6cIeu5g7NPVr-LwOg7YHBS6RobQ&s" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1')" class="w-full">
+                    <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/06/untitled9.jpg" class="rounded aspect-video" />
+                </button>
+                <button onclick="openModal('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1')" class="w-full">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvXRoFfZMHjmn9EiYtQfSQGtGNGgWNhkRyQ7ouZmJUp6Tt61SEXEpsZoBBdBBWObN27Ew&usqp=CAU" class="rounded aspect-video" />
+                </button>
+            </div>
+        </div>
+
+        <div class="absolute w-screen h-screen bg-black bg-opacity-50 flex p-4" id="myModal">
+            <div class="flex-1 h-full rounded">
+                <div class="relative p-2 mr-2">
+                    <button class="bg-red-600 aspect-square w-8 rounded absolute right-0 z-10" onclick="closeModal()">
+                      <i class="bi bi-x-lg text-white"></i>
+                    </button>
+                </div>
+                <div class="w-full h-full top-[-1rem] relative flex">
+                    <img id="modalImage" src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2025/04/Blue-Box-ep5-e1744417304237.png?resize=768%2C433&ssl=1" class="rounded flex-1 object-cover" />
+                </div>
+                <div class="relative top-[-2.5rem] p-2">
+                    <div class="absolute bottom-0 p-4 bg-white rounded text-black border w-72 sm:w-96">
+                        <p class="font-medium">Image 1 <span class="text-[0.7rem] pl-2 font-normal italic text-right">(By Varun)</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ducimus. Est obcaecati repellat eum in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalTrigger = document.getElementById("modalTrigger")
+        const modal = document.getElementById("myModal")
+        const modalImage = document.getElementById("modalImage")
+
+        modal.style.display = "none"
+
+        function openModal(url, name, rights, desc){  
+            modal.style.display = "block";
+            modalImage.src = url;
+        }
+        
+        function closeModal(){
+            modal.style.display = "none"
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> -->
+</body>
+</html>
